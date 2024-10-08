@@ -13,7 +13,10 @@ body{
     /* border box help to decrease the area of padding and border */
     display: flex;
     flex-wrap: wrap;
-    flex-flow: row-reverse;
+    justify-content:space-evenly;
+    align-items: center;
+    /* flex-flow: row-reverse; */
+    /* we can use flex direction to set in row or column */
     
 }
 /* .child1{
@@ -55,6 +58,7 @@ div+p means sibling p of div*/
 .child1{
     background-color: plum;
     margin:20px;
+    flex-basis: 50%;
 }
 .child2{
     background-color: yellow;
@@ -63,6 +67,8 @@ div+p means sibling p of div*/
 .child3{
     background-color: violet;
     margin:20px;
+    flex-basis: 30%;
+    /* flex-basis works on child only */
 }
 .child4{
     background-color: rebeccapurple;
